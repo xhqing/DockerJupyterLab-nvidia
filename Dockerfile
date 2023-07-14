@@ -7,7 +7,7 @@ RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 RUN apt update -y
 
 RUN apt install -y net-tools && apt install -y wget
-RUN apt install -y vim && apt install -y htop
+RUN apt install -y vim && apt install -y htop && apt install openssh-client
 
 ENV TIME_ZONE=Asia/Shanghai
 RUN echo "${TIME_ZONE}" > /etc/timezone && ln -sf /usr/share/zoneinfo/${TIME_ZONE} /etc/localtime
