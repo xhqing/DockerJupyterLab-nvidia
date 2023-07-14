@@ -40,7 +40,7 @@ docker run -u root -d -p SERVER_PORT:8888 -v SERVER_DIR_ABSPATH:/root/work --nam
 ```
 
 ## 页面访问
-JupyterLab容器部署好以后, 可通过此链接来访问JupyterLab: `http://SERVER_IP:SERVER_PORT/lab/tree/work`, 如果无法访问, 可能是没有`SERVER_PORT`的权限.
+JupyterLab容器部署好以后, 可通过此链接来访问JupyterLab: `http://SERVER_IP:SERVER_PORT/lab/tree/root/work`, 如果无法访问, 可能是没有`SERVER_PORT`的权限.
 
 首次浏览器登入JupyterLab需要输入密码或Token, Token可以在启动日志里面找到, 查看启动日志的命令如下: 
 ```sh
