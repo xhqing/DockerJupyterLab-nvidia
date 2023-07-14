@@ -7,7 +7,7 @@ Ubuntu 18.04.6 LTS, x86_64, NVIDIA Tesla V100 SXM2 16GB with CUDA 11.8
 
 ## 准备工作
 1. 首先确保主机上的NVIDIA驱动程序正常工作, 要能够成功运行`nvidia-smi`并看到GPU名称、驱动程序版本和CUDA版本等;
-2. 将NVIDIA Container Toolkit添加到主机, 它会集成到Docker引擎中以自动配置您的容器以支持GPU, 使用示例命令将工具包的包存储库添加到主机系统: 
+2. 将NVIDIA Container Toolkit添加到主机, 它会集成到Docker引擎中以自动配置容器以支持GPU, 使用示例命令将工具包的包存储库添加到主机系统: 
 ```sh
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
    && curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add - \
