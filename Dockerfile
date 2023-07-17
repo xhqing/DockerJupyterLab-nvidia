@@ -21,6 +21,8 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86
 ENV PATH=$CONDA_DIR/bin:$PATH
 RUN conda install -c conda-forge jupyterlab
 
+RUN pip3 install -i https://mirrors.aliyun.com/pypi/simple pipenv
+
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root"]
 
 
