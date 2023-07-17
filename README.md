@@ -47,7 +47,8 @@ JupyterLab容器部署好以后, 可通过此链接来访问JupyterLab: `http://
 docker logs CONTAINER_NAME
 ```
 
-
+## 关于Terminal
+该JupyterLab中每次新启动一个Terminal默认的shell都是sh, 该sh无法正常使用"上下左右"键, 可以切换成bash, bash使用起来更方便, 只要输入`bash`回车即可.
 
 
 
