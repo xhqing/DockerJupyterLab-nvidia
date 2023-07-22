@@ -59,7 +59,7 @@ tensorflow检查能否识别GPU:
 ```sh
 python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
 ```
-
+目前tensorflow在此容器识别不出GPU, 而torch可以识别, 原因暂且不知, 建议优先考虑使用torch.
 
 
 
