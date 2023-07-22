@@ -53,11 +53,11 @@ docker logs CONTAINER_NAME
 ## 检查torch与tensorflow能否识别GPU
 torch检查能否识别GPU:
 ```sh
-python -c "import torch; torch.cuda.is_available()"
+python -c "import torch; print(torch.cuda.is_available())"
 ```
 tensorflow检查能否识别GPU:
 ```sh
-python -c "import tensorflow as tf; tf.config.list_physical_devices('GPU')"
+python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
 ```
 
 
