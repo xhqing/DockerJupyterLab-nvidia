@@ -50,7 +50,15 @@ docker logs CONTAINER_NAME
 ## 关于Terminal
 该JupyterLab中每次新启动一个Terminal默认的shell都是sh, 该sh无法正常使用"上下左右"键, 可以切换成bash, bash使用起来更方便, 只要输入`bash`回车即可.
 
-
+## 检查torch与tensorflow能否识别GPU
+torch检查能否识别GPU:
+```sh
+python -c "import torch; torch.cuda.is_available()"
+```
+tensorflow检查能否识别GPU:
+```sh
+python -c "import tensorflow as tf; tf.config.list_physical_devices('GPU')"
+```
 
 
 
